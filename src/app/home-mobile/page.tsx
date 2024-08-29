@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export const Home = () => {
+export default function Home() {
   const [show, setShow] = useState(false);
 
   return (
@@ -123,4 +123,4 @@ export const Home = () => {
       </div>
     </>
   );
-};
+}

@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
-export const HomeDesktop = () => {
+
+export default function HomeDesktop() {
   return (
     <div className="hidden h-screen xl:h-full 2xl:h-screen home-bg-desktop lg:flex flex-col">
       <nav className="flex flex-row justify-between pt-8 pl-14 2xl:pl-32">
-        <div className="flex flex-row items-center justify-between ">
+        <div className="flex flex-row items-center justify-between">
           <Image src="/Logo.svg" width={48} height={48} alt="Logo" />
           <Image
             className="ml-20 z-20 2xl:ml-32"
@@ -37,29 +38,29 @@ export const HomeDesktop = () => {
           </li>
         </ul>
       </nav>
-      <div className="flex-grow pb-96 xl:py-32 ">
-        <div className="h-full lg:px-20 xl:px-36 2xl:px-52 flex flex-row justify-center items-end ">
-          <div className="flex flex-col justify-start gap-10 w-1/2 ">
-            <p className=" text-lg text-blue-100 tracking-widest md:text-2xl">
+      <div className="flex-grow pb-96 xl:py-32">
+        <div className="h-full lg:px-20 xl:px-36 2xl:px-52 flex flex-row justify-center items-end">
+          <div className="flex flex-col justify-start gap-10 w-1/2">
+            <p className="text-lg text-blue-100 tracking-widest md:text-2xl">
               SO, YOU WANT TO TRAVEL TO
             </p>
-            <h1 className=" text-white text-6xl tracking-widest md:text-9xl">
+            <h1 className="text-white text-6xl tracking-widest md:text-9xl">
               SPACE
             </h1>
-            <p className=" text-lg text-justify  text-blue-100 tracking-widest leading-8">
+            <p className="text-lg text-justify text-blue-100 tracking-widest leading-8">
               Let’s face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
-              it. Well sit back, and relax because we’ll give you a truly out of
-              this world experience!
+              it. Well, sit back, and relax because we’ll give you a truly out
+              of this world experience!
             </p>
           </div>
-          <div className=" flex justify-end items-center w-1/2">
+          <div className="flex justify-end items-center w-1/2">
             <button className="h-96 w-96 rounded-full flex justify-center items-center hover:bg-white/5 hover:backdrop-blur-sm">
               <Image
-                className="z-[100] bg-white rounded-full"
-                src="Display Button States - Mobile.svg"
+                className="z-[100] bg-white rounded-full object-contain"
+                src="/Display Button States - Mobile.svg"
                 width={300}
-                height={40}
+                height={300}
                 alt="Explore Button"
               />
             </button>
@@ -68,4 +69,4 @@ export const HomeDesktop = () => {
       </div>
     </div>
   );
-};
+}
