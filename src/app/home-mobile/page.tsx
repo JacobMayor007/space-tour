@@ -54,7 +54,7 @@ export default function Home() {
           <nav className="flex flex-col fixed top-0 right-0 h-full bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-md gap-32 pt-20 w-3/5 px-8">
             <div className="flex justify-end">
               <Image
-                src="X-mark.svg"
+                src="/X-mark.svg"
                 height={20}
                 width={20}
                 alt="X Mark "

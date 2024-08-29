@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -17,22 +18,22 @@ export default function HomeDesktop() {
         </div>
         <ul className="w-[736px] h-24 bg-white/5 backdrop-blur-sm flex flex-row items-center justify-evenly">
           <li>
-            <a className="text-white text-md font-serif" href="">
+            <a className="text-white text-md font-serif" href="/">
               Home
             </a>
           </li>
           <li>
-            <a className="text-white text-md font-serif" href="">
+            <a className="text-white text-md font-serif" href="/destination">
               Destination
             </a>
           </li>
           <li>
-            <a className="text-white text-md font-serif" href="">
+            <a className="text-white text-md font-serif" href="/crew">
               Crew
             </a>
           </li>
           <li>
-            <a className="text-white text-md font-serif" href="">
+            <a className="text-white text-md font-serif" href="/technology">
               Technology
             </a>
           </li>
