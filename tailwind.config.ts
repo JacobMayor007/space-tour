@@ -1,3 +1,4 @@
+import { Barlow, Bellefair } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        barlowCondensed:["Barlow Condensed"],
+        bellefair:["Bellefair"],
+        barlow:["Barlow"],
+      },
       keyframes: {
         transformX: {
           '0%': { transform: 'translateX(-2000px)' },
