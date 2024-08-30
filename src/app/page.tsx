@@ -4,7 +4,10 @@ import HomeDesktop from "./home-desktop/page";
 export default function Page() {
   return (
     <main className="">
-      <Home />
+      <div className="lg:hidden">
+        <Home />
+      </div>
+
       <HomeDesktop />
     </main>
   );

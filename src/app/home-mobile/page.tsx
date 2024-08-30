@@ -1,13 +1,24 @@
 "use client";
-
-import React, { useState } from "react";
+import Loading from "../destination/loading";
+import React, { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 
 export default function Home() {
   const [show, setShow] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 3000); // Set loading state for 1 second
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
-    <>
+    <Suspense>
       <div className="h-full home-bg-sm md:h-screen lg:hidden bg-cover bg-center py-16 p-5 md:py-0 md:p-0">
         <nav className="md:hidden flex flex-row items-center justify-between">
           <div className="relative h-14 w-16">
@@ -121,6 +132,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </Suspense>
   );
 }
