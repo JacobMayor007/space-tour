@@ -119,15 +119,17 @@ export default function Home() {
               </p>
             </div>
             <div className=" flex justify-center items-center">
-              <button className="relative h-80 w-80 rounded-full flex justify-center items-center hover:bg-white/5 hover:backdrop-blur-sm">
-                <Image
-                  className="z-[100] bg-white rounded-full"
-                  src="Display Button States - Mobile.svg"
-                  width={200}
-                  height={40}
-                  alt="Explore Button"
-                />
-              </button>
+              <a href="/destination">
+                <button className="relative h-80 w-80 rounded-full flex justify-center items-center hover:bg-white/5 hover:backdrop-blur-sm">
+                  <Image
+                    className="z-[100] bg-white rounded-full"
+                    src="Display Button States - Mobile.svg"
+                    width={200}
+                    height={40}
+                    alt="Explore Button"
+                  />
+                </button>
+              </a>
             </div>
           </div>
         </div>
