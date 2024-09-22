@@ -32,7 +32,7 @@ export default function HomeDesktop() {
           <ul className="w-[736px] h-24 bg-white/5 backdrop-blur-sm flex flex-row items-center justify-evenly">
             <li>
               <a
-                className="text-white text-xl font-condensed font-thin bg-gradient-to-r bg-left-bottom from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
+                className="text-white text-xl font-condensed font-thin bg-gradient-to-r bg-left-bottom from-white to-white  bg-no-repeat bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
                 href="/"
               >
                 00 Home

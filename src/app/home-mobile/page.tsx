@@ -62,7 +62,7 @@ export default function Home() {
         </nav>
 
         {show ? (
-          <nav className="flex flex-col fixed top-0 right-0 h-full bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-md gap-32 pt-20 w-3/5 px-8">
+          <nav className="flex flex-col fixed top-0 right-0 h-full bg-[rgba(255, 255, 255, 0.1)] backdrop-blur-md gap-32 pt-20 w-3/5 px-8 z-[100]">
             <div className="flex justify-end">
               <Image
                 src="/X-Mark.svg"
@@ -74,11 +74,12 @@ export default function Home() {
             </div>
 
             <ol>
-              <li className="mb-8 text-white font-light text-2xl">
-                00
-                <a className="mx-5 font-light" href="/">
+              <li className="mb-8 font-light text-white text-2xl flex items-center relative">
+                <span>00</span>
+                <a className="ml-5 font-light " href="/technology">
                   Home
                 </a>
+                <span className="absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-white to-white"></span>
               </li>
               <li className="mb-8 font-light text-white text-2xl">
                 01
@@ -122,7 +123,7 @@ export default function Home() {
               <a href="/destination">
                 <button className="relative h-80 w-80 rounded-full flex justify-center items-center hover:bg-white/5 hover:backdrop-blur-sm">
                   <Image
-                    className="z-[100] bg-white rounded-full"
+                    className="z-[90] bg-white rounded-full"
                     src="Display Button States - Mobile.svg"
                     width={200}
                     height={40}

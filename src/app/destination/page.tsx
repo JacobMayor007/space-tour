@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Suspense, useState, useEffect } from "react";
-import Loading from "./loading"; // Import the new component
+import Loading from "./loading";
 
 export default function Destination() {
   const [menu, setMenu] = useState(false);
@@ -62,7 +62,7 @@ export default function Destination() {
             </li>
             <li>
               <a
-                className="text-white text-xl font-condensed font-thin bg-gradient-to-r bg-left-bottom from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
+                className="text-white text-xl font-condensed font-thin bg-gradient-to-r bg-left-bottom from-white to-white bg-no-repeat bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
                 href="/destination"
               >
                 01 Destination
@@ -146,11 +146,12 @@ export default function Destination() {
                   Home
                 </a>
               </li>
-              <li className="mb-8 font-light text-white text-2xl">
-                01
-                <a className="mx-5 font-light" href="/destination">
-                  Destination{" "}
+              <li className="mb-8 font-light text-white text-2xl flex items-center relative">
+                <span>01</span>
+                <a className="ml-5 font-light " href="/technology">
+                  Destination
                 </a>
+                <span className="absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-white to-white"></span>
               </li>
               <li className="mb-8 font-light text-white text-2xl">
                 02

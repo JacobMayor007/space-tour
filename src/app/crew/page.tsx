@@ -54,7 +54,7 @@ export default function Crew() {
 
   return (
     <Suspense fallback={<Loading />}>
-      <div className="h-full flex flex-col bg-destination overflow-hidden">
+      <div className="h-full flex flex-col bg-crew overflow-hidden">
         <nav className=" md:hidden flex flex-row justify-between p-6">
           <Image src="/Logo.svg" width={40} height={40} alt="Logo" />
           <Image
@@ -96,7 +96,7 @@ export default function Crew() {
             </li>
             <li>
               <a
-                className="text-white text-xl font-condensed font-thin bg-gradient-to-r from-white to-white bg-left-bottom bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
+                className="text-white text-xl font-condensed font-thin bg-gradient-to-r from-white to-white bg-left-bottom bg-no-repeat bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
                 href="/crew"
               >
                 02 Crew
@@ -136,7 +136,7 @@ export default function Crew() {
             </li>
             <li>
               <a
-                className="font-sans text-xl text-white bg-gradient-to-r bg-left-bottom bg-no-repeat from-white to-white bg-[length:0%_2px] hover:bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
+                className="font-sans text-xl text-white bg-gradient-to-r bg-left-bottom bg-no-repeat from-white to-white bg-[length:100%_2px] transition-all duration-300 ease-out pb-9"
                 href="/crew"
               >
                 Crew
@@ -178,11 +178,12 @@ export default function Crew() {
                   Destination{" "}
                 </a>
               </li>
-              <li className="mb-8 font-light text-white text-2xl">
-                02
-                <a className="mx-5 font-light" href="/crew">
-                  Crew{" "}
+              <li className="mb-8 font-light text-white text-2xl flex items-center relative">
+                <span>02</span>
+                <a className="ml-5 font-light " href="/technology">
+                  Crew
                 </a>
+                <span className="absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-white to-white"></span>
               </li>
               <li className="mb-8 font-light text-white text-2xl ">
                 03

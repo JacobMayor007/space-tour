@@ -22,3 +22,13 @@ body {
   background-image: url("/Destination.png");
   background-size: cover;
 }
+
+.bg-crew {
+  background-image: url("/Crew.png");
+  background-size: cover;
+}
+
+.bg-technology {
+  background-image: url("/Technology.png");
+  background-size: cover;
+}
