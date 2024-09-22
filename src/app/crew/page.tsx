@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Suspense, useState, useEffect } from "react";
-import Loading from "../destination/loading";
 export default function Crew() {
   const [menu, setMenu] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -43,17 +42,8 @@ export default function Crew() {
     },
   ];
 
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense>
       <div className="h-full flex flex-col bg-crew overflow-hidden">
         <nav className=" md:hidden flex flex-row justify-between p-6">
           <Image src="/Logo.svg" width={40} height={40} alt="Logo" />

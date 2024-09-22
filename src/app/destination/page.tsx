@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Suspense, useState, useEffect } from "react";
-import Loading from "./loading";
 
 export default function Destination() {
   const [menu, setMenu] = useState(false);
@@ -16,18 +15,8 @@ export default function Destination() {
     { id: "titan", label: "Titan" },
   ];
 
-  useEffect(() => {
-    // Simulate loading delay
-    const timer = setTimeout(() => setIsLoading(false), 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense>
       <div className="h-full flex flex-col bg-destination overflow-hidden">
         <nav className=" md:hidden flex flex-row justify-between p-6">
           <Image src="/Logo.svg" width={40} height={40} alt="Logo" />
