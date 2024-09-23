@@ -173,7 +173,7 @@ export default function Technology() {
       ) : null}
 
       <div className="h-screen p-6">
-        <div className="h-full flex flex-col gap-5 pl-32">
+        <div className="h-full flex flex-col gap-5 lg:pl-32">
           <div className="flex flex-row justify-center gap-5 md:justify-start mb-16">
             <h1 className="text-gray-600 font-barlowCondensed font-bold text-xl tracking-widest">
               03
